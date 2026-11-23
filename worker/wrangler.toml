@@ -1,0 +1,11 @@
+name = "kitties-mayhem-proxy"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+routes = [{ pattern = "kitties.bercail.online", custom_domain = true }]
+
+[vars]
+RENDER_HOST = "kitties-mayhem-server.onrender.com"
+
+[triggers]
+crons = ["*/10 * * * *"]
