@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kitties-mayhem-server
+    runtime: docker
+    plan: free
+    region: ohio
+    healthCheckPath: /
+    envVars:
+      - key: BOTS
+        value: "3"
+      - key: FRAGS
+        value: "15"
+      - key: TIME
+        value: "300"
